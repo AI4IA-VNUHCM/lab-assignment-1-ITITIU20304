@@ -17,5 +17,21 @@ int main(int argc, char *argv[]) {
 	int testcase = atoi(argv[1]);
 	//Your codes here
 	
+	
+	int a,b,c;
+	for(a=2; a<=testcase; a++){
+		b=1;
+		for(c=2;c<a;c++){
+			if(a%c == 0){
+				b=0;
+				break;
+			}
+		}
+    if(b)
+	 printf("%d\n",a);
+	}
+	
+
+	
 	return 0;
 }
